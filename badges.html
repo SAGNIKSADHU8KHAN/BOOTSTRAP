@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <button type="button" class="btn btn-primary">
+        Notifications <span class="badge text-bg-secondary">4</span>
+    </button> 
+    <span class="badge text-bg-primary">Primary</span>
+    <span class="badge text-bg-secondary">Secondary</span>
+    <span class="badge text-bg-success">Success</span>
+    <span class="badge text-bg-danger">Danger</span>
+    <span class="badge text-bg-warning">Warning</span>
+    <span class="badge text-bg-info">Info</span>
+    <span class="badge text-bg-light">Light</span>
+    <span class="badge text-bg-dark">Dark</span> 
+    <span class="badge rounded-pill text-bg-primary">Primary</span>
+    <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+    <span class="badge rounded-pill text-bg-success">Success</span>
+    <span class="badge rounded-pill text-bg-danger">Danger</span>
+    <span class="badge rounded-pill text-bg-warning">Warning</span>
+    <span class="badge rounded-pill text-bg-info">Info</span>
+    <span class="badge rounded-pill text-bg-light">Light</span>
+    <span class="badge rounded-pill text-bg-dark">Dark</span> 
+    --#{$prefix}badge-padding-x: #{$badge-padding-x};
+    --#{$prefix}badge-padding-y: #{$badge-padding-y};
+    @include rfs($badge-font-size, --#{$prefix}badge-font-size);
+    --#{$prefix}badge-font-weight: #{$badge-font-weight};
+    --#{$prefix}badge-color: #{$badge-color};
+    --#{$prefix}badge-border-radius: #{$badge-border-radius}; 
+    $badge-font-size: .75em;
+    $badge-font-weight: $font-weight-bold;
+    $badge-color: $white;
+    $badge-padding-y: .35em;
+    $badge-padding-x: .65em;
+    $badge-border-radius: var(--#{$prefix}border-radius);
+</body>
+</html>
