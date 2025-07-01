@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+    <li class="page-item active">
+        <span class="page-link">2</span>
+    </li>
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+                <a class="page-link" href="#" aria-current="page">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+    </li>
+    <nav aria-label="...">
+        <ul class="pagination pagination-lg">
+            <li class="page-item active">
+                <a class="page-link" aria-current="page">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+            <li class="page-item active">
+                <a class="page-link" aria-current="page">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+    --#{$prefix}pagination-padding-x: #{$pagination-padding-x};
+    --#{$prefix}pagination-padding-y: #{$pagination-padding-y};
+    @include rfs($pagination-font-size, --#{$prefix}pagination-font-size);
+    --#{$prefix}pagination-color: #{$pagination-color};
+    --#{$prefix}pagination-bg: #{$pagination-bg};
+    --#{$prefix}pagination-border-width: #{$pagination-border-width};
+    --#{$prefix}pagination-border-color: #{$pagination-border-color};
+    --#{$prefix}pagination-border-radius: #{$pagination-border-radius};
+    --#{$prefix}pagination-hover-color: #{$pagination-hover-color};
+    --#{$prefix}pagination-hover-bg: #{$pagination-hover-bg};
+    --#{$prefix}pagination-hover-border-color: #{$pagination-hover-border-color};
+    --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
+    --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
+    --#{$prefix}pagination-focus-box-shadow: #{$pagination-focus-box-shadow};
+    --#{$prefix}pagination-active-color: #{$pagination-active-color};
+    --#{$prefix}pagination-active-bg: #{$pagination-active-bg};
+    --#{$prefix}pagination-active-border-color: #{$pagination-active-border-color};
+    --#{$prefix}pagination-disabled-color: #{$pagination-disabled-color};
+    --#{$prefix}pagination-disabled-bg: #{$pagination-disabled-bg};
+    --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
+    $pagination-padding-y: .375rem;
+    $pagination-padding-x: .75rem;
+    $pagination-padding-y-sm: .25rem;
+    $pagination-padding-x-sm: .5rem;
+    $pagination-padding-y-lg: .75rem;
+    $pagination-padding-x-lg: 1.5rem;
+    
+    $pagination-font-size: $font-size-base;
+    
+    $pagination-color: var(--#{$prefix}link-color);
+    $pagination-bg: var(--#{$prefix}body-bg);
+    $pagination-border-radius: var(--#{$prefix}border-radius);
+    $pagination-border-width: var(--#{$prefix}border-width);
+    $pagination-margin-start: calc(-1 * #{$pagination-border-width}); // stylelint-disable-line function-disallowed-list
+    $pagination-border-color: var(--#{$prefix}border-color);
+    
+    $pagination-focus-color: var(--#{$prefix}link-hover-color);
+    $pagination-focus-bg: var(--#{$prefix}secondary-bg);
+    $pagination-focus-box-shadow: $focus-ring-box-shadow;
+    $pagination-focus-outline: 0;
+    
+    $pagination-hover-color: var(--#{$prefix}link-hover-color);
+    $pagination-hover-bg: var(--#{$prefix}tertiary-bg);
+    $pagination-hover-border-color: var(--#{$prefix}border-color); // Todo in v6: remove this?
+    
+    $pagination-active-color: $component-active-color;
+    $pagination-active-bg: $component-active-bg;
+    $pagination-active-border-color: $component-active-bg;
+    
+    $pagination-disabled-color: var(--#{$prefix}secondary-color);
+    $pagination-disabled-bg: var(--#{$prefix}secondary-bg);
+    $pagination-disabled-border-color: var(--#{$prefix}border-color);
+    
+    $pagination-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+    
+    $pagination-border-radius-sm: var(--#{$prefix}border-radius-sm);
+    $pagination-border-radius-lg: var(--#{$prefix}border-radius-lg);
+    @mixin pagination-size($padding-y, $padding-x, $font-size, $border-radius) {
+    --#{$prefix}pagination-padding-x: #{$padding-x};
+    --#{$prefix}pagination-padding-y: #{$padding-y};
+    @include rfs($font-size, --#{$prefix}pagination-font-size);
+    --#{$prefix}pagination-border-radius: #{$border-radius};
+    }
+
+</body>
+
+</html>
